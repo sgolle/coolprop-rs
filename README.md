@@ -10,7 +10,7 @@ The CoolProp shared library (_libCoolProp.so_) and header file (_CoolPropLib.h_)
 
 ## Installation
 
-The wrapper gets published on [Crates.io](crates.io) as `coolplot-rs` and you can add the library in your project.
+The wrapper gets published on [Crates.io](https://crates.io) as `coolplot-rs` and you can add the library in your project.
 
 ```toml
 [dependencies]
