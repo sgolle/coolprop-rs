@@ -6,11 +6,11 @@ The wrapper uses rust-bindgen to create the bindings to the C++ shared library o
 
 ## Prerequisites
 
-The CoolProp shared library (_libCoolProp.so_) and header file (_CoolPropLib.h_) must be installed on the computer in the systems folder. On Linux e. g. _/usr/lib64_ and _/usr/include_.
+The CoolProp shared library (_libCoolProp.so_) and header file (_CoolPropLib.h_) must be installed on the computer in the systems folder. On Linux e. g. _/usr/lib64_ and _/usr/include_. Instructions to compile and install CoolProp for your system can be found on the project page [CoolProp](https://github.com/CoolProp/CoolProp).
 
 ## Installation
 
-The wrapper gets published on [Crates.io] as `coolplot-rs` and you can add the library in your project.
+The wrapper gets published on [Crates.io](crates.io) as `coolplot-rs` and you can add the library in your project.
 
 ```toml
 [dependencies]
@@ -30,16 +30,20 @@ use coolprop-rs::bindings::*
 The subset of Rust methods are at the moment **props_si** and **ha_props_si**:
 
 ```Rust
-props_si("H", "T", 300.0, "Q", 1.0, "R134a").unwrap(),
+props_si("H", "T", 300.0, "Q", 1.0, "R134a").unwrap()
 ```
+
+Output:
 
 ```bash
 413265.6843372975
 ```
 
 ```Rust
-ha_props_si("H", "T", 300.0, "P", 100000.0, "R", 0.0).unwrap(),
+ha_props_si("H", "T", 300.0, "P", 100000.0, "R", 0.0).unwrap()
 ```
+
+Output:
 
 ```bash
 27013.112479771713
