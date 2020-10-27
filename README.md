@@ -14,7 +14,7 @@ The wrapper gets published on [crates.io](https://crates.io/crates/coolprop-rs) 
 
 ```toml
 [dependencies]
-coolprop-rs = "0.1"
+coolprop-rs = "0.2"
 ```
 
 ## Examples
@@ -29,14 +29,14 @@ Rust:
 use coolprop-rs::bindings::*;
 ```
 
-The subset of Rust methods are at the moment **props_si()** and **ha_props_si()**:
+The subset of Rust methods are at the moment **PropsSI()** and **HAPropsSI()**:
 
 Rust:
 
 ```Rust
 use coolprop-rs;
-println!("{:?}", coolprop-rs::props_si("H", "T", 300.0, "Q", 1.0, "R134a").unwrap());
-println!("{:?}", coolprop-rs::ha_props_si("H", "T", 300.0, "P", 100000.0, "R", 0.0).unwrap());
+println!("{:?}", coolprop-rs::PropsSI("H", "T", 300.0, "Q", 1.0, "R134a").unwrap());
+println!("{:?}", coolprop-rs::HAPropsSI("H", "T", 300.0, "P", 100000.0, "R", 0.0).unwrap());
 ```
 
 Output:
